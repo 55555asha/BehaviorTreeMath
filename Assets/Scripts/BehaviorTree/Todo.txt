@@ -1,0 +1,81 @@
+1. Scalar math (float / int)
+(P)DONE Math Float / Math Int with enum ops: Add, Subtract, Multiply, Divide, Modulo, Pow, Min, Max 
+(P)DONE Unary: Abs, Negate, Sign, Floor, Ceil, Round, Sqrt, Square, Reciprocal
+(P) Clamp / Clamp01
+(P)DONE Lerp / InverseLerp / Remap
+SmoothStep, MoveTowards, SmoothDamp
+Repeat / PingPong / DeltaAngle
+Trig: Sin, Cos, Tan, Asin, Acos, Atan2, Deg↔Rad
+Log / Exp
+
+---
+
+2. Randomness
+(P)DONE Random Float / Int in range
+(P)DONE Random Bool / Chance (C) (probability 0..1)
+(P)DONE Random Direction (2D, 3D, planar on XZ, within a cone)
+(P) Random Point In circle, annulus, sphere, box, cone, or around a transform
+Random Gaussian (bell-curve)
+Weighted Random Index (weights in, chosen index out)
+Random From List and Shuffle List
+Set Seed, for reproducible tests
+Pity timer: chance rises with each failure and resets on success
+
+---
+
+3. Vectors (2D / 3D)
+(P)DONE Math Vector with ops: Add, Subtract, Scale, component-wise Multiply and Divide
+(P)DONE Distance / SqrDistance, plus a planar variant that ignores Y
+(P)DONE Direction To (normalized, with an optional flatten)
+(P)DONE Normalize / Magnitude / ClampMagnitude
+(P)DONE Offset Position (origin + direction × distance)
+(P)DONE Make / Break Vector and Flatten
+Dot, Cross, Angle, SignedAngle
+Project, ProjectOnPlane, Reflect, Perpendicular
+Lerp, Slerp, MoveTowards, RotateTowards
+Transform Point / Inverse Transform Point / Transform Direction (local ↔ world)
+Midpoint / Centroid
+Closest Point on Line / Segment / Bounds / Collider
+Rotate Vector Around Axis
+Vector From Angle / Angle From Vector
+Is Zero / Approximately Equal
+
+---
+
+4. Rotation and facing
+Look Rotation, FromToRotation, AngleAxis
+Euler ↔ Quaternion, Quaternion Multiply / Inverse
+Angle Between Rotations
+Is In Front / Behind (C) (dot product with a threshold)
+Is In Cone / FOV (C) (angle and range together)
+Relative Side (left or right of the agent, from the cross-product sign)
+Turn Rate Limit (rotate toward a target by at most X°/s)
+
+---
+
+5. Comparison and logic
+(P) Compare Float / Int (<, ≤, ==, ≠, ≥, >)
+(P) In Range / Outside Range
+(P) Select (bool ? A : B), which stands in for the missing ternary expression
+(P) Bool Logic with And, Or, Not, Xor, Nand
+Approximately (with a tolerance)
+Value Changed By ≥ Delta
+Is Even / Odd
+Min / Max of N inputs
+Is Null / Is Valid
+
+---
+
+6. Time
+(P) Stopwatch (start, elapsed) and Timestamp (store the current time)
+(P) Cooldown (start, is ready)
+Time Since
+Timer (set, remaining, expired)
+Tween Value (A→B over a duration with an easing curve)
+
+---
+
+X. Debugging
+
+(P)DONE Log Value
+(P) Draw Debug Line / Ray / Sphere (Gizmos or Debug.Draw)
